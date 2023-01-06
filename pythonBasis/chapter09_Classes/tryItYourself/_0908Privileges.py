@@ -5,25 +5,24 @@
 # Make a Privileges instance as an attribute in the Admin class. 
 # Create a new instance of Admin and use your method to show its privileges.
 
-from _0903Users import User
 
 class Privileges():
     '''a separate Privileges class.'''
     def __init__(self):
         self.privileges = ['can add post', 'can delete post', 'can ban user']
     
-    def show_admin_privileges(self):
+    def show_privileges(self):
         '''lists the administrator’s set of privileges. '''
         for privilege in self.privileges:
             print(f"The Admin {privilege}.")
 
-class Admin(User):
-    def __init__(self, first_name, last_name, age, location):
-        super().__init__(first_name, last_name, age, location)
-        self.privileges = Privileges()
+# class Admin(User):
+#     def __init__(self, first_name, last_name, age, location):
+#         super().__init__(first_name, last_name, age, location)
+#         self.privileges = Privileges()
 
-your_Admin = Admin('luna', 'marko', '8', 'kassel')
+# your_Admin = Admin('luna', 'marko', '8', 'kassel')
 
-your_Admin.describe_user()
+# your_Admin.describe_user()
 
-your_Admin.privileges.show_admin_privileges()
+# your_Admin.privileges.show_admin_privileges()

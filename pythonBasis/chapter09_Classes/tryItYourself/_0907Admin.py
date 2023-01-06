@@ -6,6 +6,7 @@
 # Write a method called show_privileges() that lists the administrator’s set of privileges. 
 # Create an instance of Admin, and call your method.
 
+from _0908Privileges import Privileges
 from _0903Users import User
 
 class Admin(User):
@@ -14,14 +15,14 @@ class Admin(User):
     def __init__(self, first_name, last_name, age, location):
         '''initialization'''
         super().__init__(first_name, last_name, age, location)
-        self.privileges = ['can add post', 'can delete post', 'can ban user']
+        self.privileges = Privileges()
     
-    def show_privileges(self):
-        '''lists the administrator’s set of privileges. '''
-        for privilege in self.privileges:
-            print(f"The Admin {privilege}.")
+    # def show_privileges(self):
+    #     '''lists the administrator’s set of privileges. '''
+    #     for privilege in self.privileges:
+    #         print(f"The Admin {privilege}.")
 
-myAdmin = Admin('Snowy', 'Linsing', 20, 'Mainz')
-myAdmin.describe_user()
-myAdmin.show_privileges()
+# myAdmin = Admin('Snowy', 'Linsing', 20, 'Mainz')
+# myAdmin.describe_user()
+# myAdmin.show_privileges()
         

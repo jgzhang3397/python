@@ -25,9 +25,9 @@ class User:
     
     def greet_user(self):
         """ greeting to the user"""
-        print(f"{self.last_name.title()} {self.first_name.title()}, you are {self.age} years old and in {self.location}. ich grüße dich!")
+        print(f"{self.last_name.title()} {self.first_name.title()}, you are {self.age} years old and in {self.location.title()}. ich grüße dich!")
 
 
-user = User('snowy', 'zhang', 2, 'mainz')
-user.describe_user()
-user.greet_user()
+# user = User('snowy', 'zhang', 2, 'mainz')
+# user.describe_user()
+# user.greet_user()
