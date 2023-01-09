@@ -1,0 +1,7 @@
+What did I learn from Python?
+1. variables datatypes
+2. list
+3. if statement
+4. use input & while
+5. functions
+6. classes
